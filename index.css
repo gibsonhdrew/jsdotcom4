@@ -1,0 +1,305 @@
+* {
+    font-family: 'Nunito', 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.homeContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    text-align: center;
+}
+.homeContent a {
+    font-weight: bold;
+}
+.homeContent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 100%), url("./home-bgs/1.png");
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.homeNav {
+    margin-bottom: 20px;
+}
+.homeNav a {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.homeNav a:hover {
+    color: #333333;
+}
+.homeNav li {
+    padding: 10px 0;
+}
+
+.socials {
+    height: 40px;
+}
+.socials img {
+    max-height: 100%;
+    margin: 0 3px;
+}
+.socials img:hover {
+    opacity: 0.7;
+}
+
+.homeBg {
+    display: absolute;
+    height:
+}
+
+.whiteBg {
+    background-color: rgba(255, 255, 255, 0.93);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.secondaryPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.secondaryPage .navBar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+    width: 100vw;
+    height: 50px;
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+.secondaryPage .navBar a {
+    padding: 0 25px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.aboutContainer {
+    width: 80vw;
+    margin-bottom: 30px;
+}
+.aboutContainer img {
+    height: 250px;
+    float: left;
+    margin: 15px 35px 15px 0;
+}
+.aboutContainer p {
+    margin: 15px 15px 15px 0;
+}
+
+.projectsOverview {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.project {
+    flex: 0 0 calc(90% - 10px);
+    height: 130px;
+    margin: 15px 10px;
+    color: black;
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.project:hover {
+    opacity: 0.9;
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.2);
+}
+.project:nth-child(even) {
+    margin-left: auto;
+}
+.project h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.project img {
+    width: 160px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+.project p {
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.defaultProjectLayout {
+    margin: 0 25px;
+    width: 65vw;
+}
+.defaultProjectLayout .mainProjectImg {
+    width: 600px;
+    border-radius: 4px;
+}
+.defaultProjectLayout a {
+    color: black;
+    font-weight: bold;
+}
+.defaultProjectLayout p {
+    padding-right: 15px;
+}
+.defaultProjectLayout .backButton {
+    padding-bottom: 60px;
+}
+
+.youtube-embed {
+  position: relative;
+  height: 0;
+  width: 65%;
+  padding-bottom: 36.56%;
+}
+
+.youtube-embed > iframe {
+  position: absolute;
+  border-radius: 10px;
+  border: 3px solid #ffcad5;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projectImageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.projectImageGallery a {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 30px;
+}
+.projectImageGallery img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Mobile phones */
+@media screen and (max-width: 640px) {
+  .aboutContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .aboutContainer img {
+      float: none;
+  }
+
+  .secondaryPage {
+      padding-bottom: 20px;
+  }
+
+  .project {
+      flex: 0 0 calc(90% - 10px);
+      height: auto;
+      margin: 15px 10px;
+      color: black;
+      padding: 18px 15px 0px 15px;
+      text-align: center;
+      box-shadow: 0px 1px 8px rgba(0,0,0,0.2);
+  }
+  .project:nth-child(even) {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .project:nth-child(odd) {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .project h2 {
+      font-size: 18px;
+      margin-bottom: 14px;
+  }
+  .project img {
+      width: 214px;
+      height: 134px;
+      float: none;
+      margin: 0px;
+      border-radius: 4px;
+      opacity: 0.9;
+  }
+  .project p {
+      text-align: left;
+      margin-top: 5px;
+      margin-right: 15px;
+  }
+
+  .performanceHeader {
+      font-size: 24px;
+  }
+
+  .secondaryPage .navBar a {
+      padding: 0 5vw;
+      font-weight: bold;
+      color: #333333;
+      font-size: 14px;
+  }
+
+  .defaultProjectLayout {
+      margin: 0 25px;
+      width: 87vw;
+  }
+  .defaultProjectLayout .mainProjectImg {
+      width: 87vw;
+      border-radius: 4px;
+  }
+  .defaultProjectLayout .backButton {
+      padding-bottom: 20px;
+  }
+
+  .project {
+  }
+  .projectImageGallery a {
+      width: 47%;
+  }
+
+  .aboutContainer {
+      width: 80vw;
+      margin-bottom: 30px;
+  }
+  .aboutContainer img {
+      height: 250px;
+      float: none;
+      margin: 15px;
+  }
+  .aboutContainer p {
+      margin: 15px 15px 15px 0;
+  }
+
+}
