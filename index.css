@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -101,6 +97,7 @@ ul {
     padding: 0 25px;
     font-weight: bold;
     color: #333333;
+    text-decoration: none;
 }
 
 .aboutContainer {
@@ -115,6 +112,11 @@ ul {
 .aboutContainer p {
     margin: 15px 15px 15px 0;
 }
+.aboutContainer a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
 
 .projectsOverview {
     width: 90vw;
@@ -123,6 +125,9 @@ ul {
     margin-bottom: 20px;
 }
 
+.projectsOverview a {
+    text-decoration: none;
+}
 .project {
     flex: 0 0 calc(90% - 10px);
     height: 130px;
@@ -155,10 +160,14 @@ ul {
     margin-top: 5px;
     margin-right: 15px;
 }
-
 .defaultProjectLayout {
     margin: 0 25px;
     width: 65vw;
+}
+.defaultProjectLayout a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
 }
 .defaultProjectLayout .mainProjectImg {
     width: 600px;
@@ -185,7 +194,6 @@ ul {
 .youtube-embed > iframe {
   position: absolute;
   border-radius: 10px;
-  border: 3px solid #ffcad5;
   box-sizing: border-box;
   top: 0;
   left: 0;
@@ -202,7 +210,8 @@ ul {
 .projectImageGallery a {
     display: inline-block;
     width: 30%;
-    margin-bottom: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 .projectImageGallery img {
     width: 100%;
@@ -269,6 +278,7 @@ ul {
       font-weight: bold;
       color: #333333;
       font-size: 14px;
+      text-decoration: none;
   }
 
   .defaultProjectLayout {
@@ -302,4 +312,8 @@ ul {
       margin: 15px 15px 15px 0;
   }
 
+  .youtube-embed {
+    width: 100%;
+    padding-bottom: 56.26%;
+  }
 }
