@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
     <link rel="stylesheet" href="../index.css">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.email-link').forEach(function(el) {
+          el.onclick = function(e) {
+            e.preventDefault();
+            window.location.href = 'mailto:sunwooprojects@gmail.com';
+          };
+        });
+      });
+    </script>
   </head>
   <body class="secondaryPage performancesPage">
     <div class="navBar">
@@ -19,7 +29,7 @@
     <div class="projectsOverview">
 
       <a class="project" href="./specially-processed/">
-	<img src="./specially-processed/images/11.jpg">
+	<img src="./specially-processed/images/11-thumb.jpg">
 	<h2>Specially Processed American Me</h2>
 	<p>
           A surreal autobiographical performance film using SPAM, the canned meat, as a portal into
@@ -28,7 +38,7 @@
       </a>
 
       <a class="project" href="./embodied/">
-	<img src="./embodied/images/1.jpg">
+	<img src="./embodied/images/1-thumb.jpg">
 	<h2>Embodied</h2>
 	<p>
           Performers repeat text verbatim as they listen to remixed audio tracks of fifty-five
@@ -38,7 +48,7 @@
       </a>
 
       <a class="project" href="./you-are-the-news-now/">
-	<img src="./you-are-the-news-now/images/2.jpg">
+	<img src="./you-are-the-news-now/images/2-thumb.jpg">
 	<h2>You Are The News Now</h2>
 	<p>
           Through parallel monologues sourced entirely from found text, this multimedia
@@ -48,7 +58,7 @@
       </a>
 
       <a class="project" href="./regeneration-lab/">
-	<img src="./regeneration-lab/images/1.png">
+	<img src="./regeneration-lab/images/1-thumb.png">
 	<h2>reGENEration lab</h2>
 	<p>
           A gene modification clinic that promises to transform patients
@@ -57,7 +67,7 @@
       </a>
 
       <a class="project" href="./ear-to-ear/">
-	<img src="./ear-to-ear/images/1.jpg">
+	<img src="./ear-to-ear/images/1-thumb.jpg">
 	<h2>Ear to Ear</h2>
 	<p>
           With ears pressed together, people listen to each other's inner
@@ -66,7 +76,7 @@
       </a>
 
       <a class="project" href="./earshot/">
-	<img src="./earshot/images/1.jpg">
+	<img src="./earshot/images/1-thumb.jpg">
 	<h2>Earshot</h2>
 	<p>
           An interactive radio play in New York City bars.
@@ -74,7 +84,7 @@
       </a>
 
       <a class="project" href="./household/">
-	<img src="./household/images/1.JPG">
+	<img src="./household/images/1-thumb.JPG">
 	<h2>Household</h2>
 	<p>
           The story of a dysfunctional family of household objects– Blender, Vacuum,
@@ -83,7 +93,7 @@
       </a>
 
       <a class="project" href="./the-creature/">
-	<img src="./the-creature/images/1.jpg">
+	<img src="./the-creature/images/1-thumb.jpg">
 	<h2>The Creature</h2>
 	<p>
           The Creature leaves the comfort of its rainbow fungal abode to spread its colorful spores
@@ -93,7 +103,7 @@
       </a>
 
       <a class="project" href="./safety-net/">
-	<img src="./safety-net/images/1.jpg">
+	<img src="./safety-net/images/1-thumb.jpg">
 	<h2>Safety Net</h2>
 	<p>
           An autobiographical audio story about Jaime Sunwoo's childhood fear of sleeping alone.
@@ -103,7 +113,7 @@
     </div>
     <div class="socials">
       <a href="https://instagram.com/jaimesunwoo"><img id="soc-inst" src="../svg/instagram.svg"></a>
-      <a href="mailto:sunwooprojects@gmail.com"><img id="soc-mail" src="../svg/mail.svg"></a>
+      <a href="#" class="email-link"><img id="soc-mail" src="../svg/mail.svg"></a>
       <a href="https://forms.gle/59yWUwJkZVhdqh6x5"><img id="soc-news" src="../svg/newsletter.svg"></a>
     </div>
   </body>

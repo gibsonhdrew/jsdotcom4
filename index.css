@@ -209,12 +209,14 @@ ul {
 }
 .projectImageGallery a {
     display: inline-block;
-    width: 30%;
+    width: 31%;
     margin-top: 12px;
     margin-bottom: 12px;
 }
 .projectImageGallery img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 4px;
 }
 
@@ -297,6 +299,9 @@ ul {
   }
   .projectImageGallery a {
       width: 47%;
+  }
+  .projectImageGallery img {
+      height: 150px;
   }
 
   .aboutContainer {

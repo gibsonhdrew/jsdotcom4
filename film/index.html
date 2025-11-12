@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
     <link rel="stylesheet" href="../index.css">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.email-link').forEach(function(el) {
+          el.onclick = function(e) {
+            e.preventDefault();
+            window.location.href = 'mailto:sunwooprojects@gmail.com';
+          };
+        });
+      });
+    </script>
   </head>
   <body class="secondaryPage filmPage">
     <div class="navBar">
@@ -18,8 +28,16 @@
     <h1 class="whiteBg">Film</h1>
     <div class="projectsOverview">
 
+      <a class="project" href="./spoon-fed/">
+	<img src="./spoon-fed/images/2-thumb.jpg">
+	<h2>Spoon-Fed (in post-production)</h2>
+	<p>
+          A homeschooled girl and her scientist father scramble to maintain order when a human experiment they care for claims to have witnessed hidden horrors.
+	</p>
+      </a>
+
       <a class="project" href="./handwritten/">
-	<img src="./handwritten/images/1.png">
+	<img src="./handwritten/images/1-thumb.png">
 	<h2>Handwritten</h2>
 	<p>
           An animated short documentary on the significance of handwriting in Jaime Sunwoo's
@@ -29,7 +47,7 @@
       </a>
 
       <a class="project" href="./equality-tea/">
-	<img src="./equality-tea/images/1.jpg">
+	<img src="./equality-tea/images/1-thumb.jpg">
 	<h2>Equality Tea</h2>
 	<p>
           An animated short documentary that makes parallels between the fraught histories
@@ -38,7 +56,7 @@
       </a>
 
       <a class="project" href="./color-theory/">
-	<img src="./color-theory/images/4.png">
+	<img src="./color-theory/images/4-thumb.png">
 	<h2>Color Theory</h2>
 	<p>
           A hybrid documentary short scripted with found text examining the
@@ -48,7 +66,7 @@
       </a>
 
       <a class="project" href="../performance-installation/specially-processed/">
-	<img src="../performance-installation/specially-processed/images/11.jpg">
+	<img src="../performance-installation/specially-processed/images/11-thumb.jpg">
 	<h2>Specially Processed American Me</h2>
 	<p>
           A surreal autobiographical performance film using SPAM,
@@ -60,7 +78,7 @@
     </div>
     <div class="socials">
       <a href="https://instagram.com/jaimesunwoo"><img id="soc-inst" src="../svg/instagram.svg"></a>
-      <a href="mailto:sunwooprojects@gmail.com"><img id="soc-mail" src="../svg/mail.svg"></a>
+      <a href="#" class="email-link"><img id="soc-mail" src="../svg/mail.svg"></a>
       <a href="https://forms.gle/59yWUwJkZVhdqh6x5"><img id="soc-news" src="../svg/newsletter.svg"></a>
     </div>
   </body>

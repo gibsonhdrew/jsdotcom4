@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.email-link').forEach(function(el) {
+          el.onclick = function(e) {
+            e.preventDefault();
+            window.location.href = 'mailto:sunwooprojects@gmail.com';
+          };
+        });
+      });
+    </script>
   </head>
   <body class="homeContent">
     <div class="whiteBg" style="padding:20px 40px 50px 40px;">
@@ -20,7 +30,7 @@
 
     <div class="socials">
       <a href="https://instagram.com/jaimesunwoo"><img id="soc-inst" src="./svg/instagram.svg"></a>
-      <a href="mailto:sunwooprojects@gmail.com"><img id="soc-mail" src="./svg/mail.svg"></a>
+      <a href="#" class="email-link"><img id="soc-mail" src="./svg/mail.svg"></a>
       <a href="https://forms.gle/59yWUwJkZVhdqh6x5"><img id="soc-news" src="./svg/newsletter.svg"></a>
     </div>
     </div>
